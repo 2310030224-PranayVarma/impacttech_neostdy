@@ -12,8 +12,8 @@ import {UserButton} from '@clerk/next.js'
 export default function Home() {
   return (
     <div>
-      <h2>Subscibe to Tech</h2>
-      <Button variant="ghost">Subscibe</Button>
+      <h2>Subscribe to Tech</h2>
+      <Button variant="ghost">Subscribe</Button>
       <UserButton/>
 >>>>>>> bb7bdfa (mycommit)
     </div>
