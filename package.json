@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "inngest": "^3.34.4"
+    "inngest": "^3.34.4",
+    "@clerk/nextjs": "^6.13.0"
   }
 }
+
+

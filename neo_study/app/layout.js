@@ -1,7 +1,21 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google"; // Updated fonts
 import "./globals.css";
+<<<<<<< HEAD
 import {Outfit} from 'next/font/google'
 
+=======
+import { ClerkProvider } from "@clerk/nextjs"; // Fixed import
+import {Provider} from './provider'
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const robotoMono = Roboto_Mono({
+  variable: "--font-roboto-mono",
+  subsets: ["latin"],
+});
+>>>>>>> bb7bdfa (mycommit)
 
 export const metadata = {
   title: "Create Next App",
@@ -14,6 +28,7 @@ const outfit=Outfit({
 
 export default function RootLayout({ children }) {
   return (
+<<<<<<< HEAD
     <html lang="en">
       <body
         className={outfit.className}
@@ -21,5 +36,18 @@ export default function RootLayout({ children }) {
         {children}
       </body>
     </html>
+=======
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`${inter.variable} ${robotoMono.variable} antialiased`}
+        ><Provider>
+          {children}
+          </Provider>
+          
+        </body>
+      </html>
+    </ClerkProvider>
+>>>>>>> bb7bdfa (mycommit)
   );
 }
